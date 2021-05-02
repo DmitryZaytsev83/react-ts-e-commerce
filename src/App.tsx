@@ -1,6 +1,7 @@
 import {Route} from 'react-router-dom';
 import './App.css';
-import HomePage from './pages/homepage/HomePage.component';
+import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
 
 const TopicList = (props: any) => {
     console.log(props);
@@ -24,8 +25,7 @@ function App() {
     return (
         <div className="App">
             <Route exact path='/' component={HomePage}/>
-            <Route path='/topics' component={TopicList}/>
-            <Route path='/topics/:topicId' component={TopicDetail}/>
+            <Route path='/shop' component={ShopPage}/>
         </div>
     );
 }
